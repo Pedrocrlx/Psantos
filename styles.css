@@ -1,0 +1,55 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 1px solid black;
+    box-shadow: 1px;
+}
+
+header .home-button {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.port-image {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    gap: 15px;
+}
+
+.about{
+    justify-items: center;
+    min-height: 80vh;
+}
+

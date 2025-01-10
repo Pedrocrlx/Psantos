@@ -9,71 +9,84 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Front-End">
     <meta name="author" content="Pedro Santos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="./pages/sobre.html">Sobre</a>
-            <a href="./pages/educacao.html">Educação</a>
-            <a href="./pages/experiencia.html">Experiência</a>
-            <a href="./pages/contactos.html">Contacto</a>
-        </nav>
+        <div class="navbar">
+            <a class="home-button" href="../index.html">LOGO</a>
+            <nav>
+                <a href="./pages/sobre.html">Sobre</a>
+                <a href="./pages/educacao.html">Educação</a>
+                <a href="./pages/experiencia.html">Experiência</a>
+                <a href="./pages/contactos.html">Contacto</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Portfólio</h1>
-        <img src="./images/person-front-computer-working-html_926199-3762909.avif" alt="">
-        <br>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <ul>
-                <li>
-                    <p>20 Anos</p>
-                </li>
-                <li>
-                    <p>Albufeira</p>
-                </li>
-                <li>
-                    <p>Formando na Etic Algarve - Programação Web 24-26</p>
-                </li>
-            </ul>
-        </section>
-        <br>
-        <section id="educacao">
-            <h2>Educação</h2>
-            <ul>
-                <li>
-                    <p>Curso Secundário- <b>Técnico de Gestão e Programção de Sistemas Informáticos</b></p>
-                </li>
-                <li>
-                    <p>Curso Etic Algarve - <b>Programação Web</b></p>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="port-image">
+                <h1>Portfólio</h1>
+                <img src="./images/person-front-computer-working-html_926199-3762909.avif" alt="">
+            </div>
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <ul>
+                    <li>
+                        <p>20 Anos</p>
+                    </li>
+                    <li>
+                        <p>Albufeira</p>
+                    </li>
+                    <li>
+                        <p>Formando na Etic Algarve - Programação Web 24-26</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="educacao">
+                <h2>Educação</h2>
+                <ul>
+                    <li>
+                        <p>Curso Secundário- <b>Técnico de Gestão e Programção de Sistemas Informáticos</b></p>
+                    </li>
+                    <li>
+                        <p>Curso Etic Algarve - <b>Programação Web</b></p>
+                    </li>
+                </ul>
+                <br>
+                <div class="port-image">
+                    <iframe width="50%" height="500" src="https://www.youtube.com/embed/aUArTX_cWx4">
+                    </iframe>
+                </div>
+
+            </section>
             <br>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/aUArTX_cWx4">
-            </iframe>
-        </section>
-        <br>
-        <section id="experiencia">
-            <h2>Experiência Profissional</h2>
-            <ol>
-                <li>
-                    <a href="https://www.kapta.pt/"><b>Kapta</b></a>
-                    <p>Front-End Developer - <b>3 Meses</b></p>
-                </li>
-                <li>
-                    <a>Empresa B</a>
-                    <p>Front-End Developer - <b>Atualmente</b></p>
-                </li>
-            </ol>
-        </section>
-        <br>
-        <section id="Contacto">
-            <h2>Vamos falar sobre o nosso próximo projeto!</h2>
-            <a href="contactos.html">Clique aqui</a>
-            <p><b>pedrosantoscrlx@gmail.com </b></p>
-            <p><b>925-456-789</b></p>
-        </section>
+            <section id="experiencia">
+                <h2>Experiência Profissional</h2>
+                <ol>
+                    <li>
+                        <a href="https://www.kapta.pt/"><b>Kapta</b></a>
+                        <p>Front-End Developer - <b>3 Meses</b></p>
+                    </li>
+                    <li>
+                        <a>Empresa B</a>
+                        <p>Front-End Developer - <b>Atualmente</b></p>
+                    </li>
+                </ol>
+            </section>
+            <br>
+            <section class="port-image" id="Contacto">
+                <h2 >Vamos falar sobre o nosso próximo projeto!</h2>
+                <a href="contactos.html">Clique aqui</a>
+                <p><b>pedrosantoscrlx@gmail.com </b></p>
+                <p><b>925-456-789</b></p>
+            </section>
+        </div>
     </main>
     <br>
     <footer>
@@ -82,4 +95,5 @@
     </footer>
 
 </body>
+
 </html>

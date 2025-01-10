@@ -8,78 +8,87 @@
     <meta name="author" content="Pedro Santos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/logo_ETIC_header.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <title>Contacto</title>
 </head>
 
 <body>
     <header>
-        <a href="../index.html">Home</a>
-        <nav>
-            <a href="./sobre.html">Sobre</a>
-            <a href="./educacao.html">Educação</a>
-            <a href="./experiencia.html">Experiência</a>
-            <a href="./contactos.html">Contacto</a>
-        </nav>
+        <div class="navbar">
+            <a class="home-button" href="../index.html">LOGO</a>
+            <nav>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./educacao.html">Educação</a>
+                <a href="./experiencia.html">Experiência</a>
+                <a href="./contactos.html">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <section id="Contacto">
-        <form action="" method="post">
-            <table>
-                <thead>
-                    <th>
-                        <h2>Contacto</h2>
-                    </th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nome da empresa</td>
-                        <td>Email da empresa</td>
-                        <td>Número de telemóvel</td>
-                        <td>Cidade/Região</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="empresa"></label>
-                            <input type="text" name="empresa" for="empresa" placeholder="Empresa" required>
-                        </td>
-                        <td>
-                            <label for="email"></label>
-                            <input type="email" name="email" placeholder="empresa@.gmail.com" required>
-                        </td>
-                        <td>
-                            <label for="telemovel"></label>
-                            <input type="number" name="number" placeholder="000-000-000" required>
-                        </td>
-                        <td>
-                            <label for="regiao"></label>
-                            <select id="regiao">
-                                <option value="Faro">Faro</option>
-                                <option value="Lisboa">Lisboa</option>
-                                <option value="Porto">Porto</option>
-                                <option value="Coimbra">Coimbra</option>
-                                <option value="Viseu">Viseu</option>
-                                <option value="Braga">Braga</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Fale sobre o seu projeto ! </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="assunto"></label>
-                            <textarea id="assunto"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="submit">Contactar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-    </section>
-    <br><br>
+    <div class="container">
+        <section class="port-image about" id="Contacto">
+            <form action="" method="post">
+                <table>
+                    <thead>
+                        <th>
+                            <h2>Contacto</h2>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome da empresa</td>
+                            <td>Email da empresa</td>
+                            <td>Número de telemóvel</td>
+                            <td>Cidade/Região</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="empresa"></label>
+                                <input type="text" name="empresa" for="empresa" placeholder="Empresa" required>
+                            </td>
+                            <td>
+                                <label for="email"></label>
+                                <input type="email" name="email" placeholder="empresa@.gmail.com" required>
+                            </td>
+                            <td>
+                                <label for="telemovel"></label>
+                                <input type="number" name="number" placeholder="000-000-000" required>
+                            </td>
+                            <td>
+                                <label for="regiao"></label>
+                                <select id="regiao">
+                                    <option value="Faro">Faro</option>
+                                    <option value="Lisboa">Lisboa</option>
+                                    <option value="Porto">Porto</option>
+                                    <option value="Coimbra">Coimbra</option>
+                                    <option value="Viseu">Viseu</option>
+                                    <option value="Braga">Braga</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fale sobre o seu projeto ! </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="assunto"></label>
+                                <textarea id="assunto"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit">Contactar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+        <br><br>
+    </div>
     <footer>
         <p>@Pedro Santos</p>
         <p>Copyright © 2025. All rights are reserved.</p>
