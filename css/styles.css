@@ -1,7 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    height: 100%;
 }
 
 .navbar {
@@ -49,6 +48,10 @@ header .home-button {
     color: white;
 }
 
+div.port-image img {
+    width: 500px;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -85,9 +88,55 @@ table tbody tr td button {
 }
 
 input:focus {
-    border: 5px solid lightgray;
+    border: 5px solid rgb(10, 84, 126);
 }
 
+div.container div.topics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+div.topics button.link-topics {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(10, 84, 126);
+    padding: 25px;
+    border-radius: 150px;
+    border: none;
+}
+
+section.port-image,
+section.port-image h2 {
+    padding: 25px;
+}
+
+section.port-image div p {
+    font-size: 18px;
+}
+
+section.port-image button {
+    color: white;
+    font-weight: 700;
+    background-color: rgb(10, 84, 126);
+    padding: 25px;
+    border-radius: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+section.port-image div,
+section.port-image div p {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 45px;
+    padding-top: 25px;
+}
 
 footer {
     display: flex;
@@ -96,8 +145,15 @@ footer {
     gap: 15px;
     background-color: rgb(10, 84, 126);
     color: white;
-    font-size: 20px;
-    padding: 20px;
+    padding: 15px;
+}
+
+.link-topics {
+    transition: all .2s ease-in-out;
+}
+
+button.link-topics:hover {
+    transform: scale(1.1);
 }
 
 .about {
