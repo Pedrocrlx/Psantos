@@ -95,6 +95,8 @@ footer {
     gap: 15px;
     background-color: rgb(10, 84, 126);
     color: white;
+    font-size: 20px;
+    padding: 20px;
 }
 
 .about {
