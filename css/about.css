@@ -61,7 +61,7 @@ img.react-logo {
 
 img {
     width: 500px;
-    height: 1%;
+    size: cover;
 }
 
 .introducao{
