@@ -51,17 +51,8 @@ img.logo-img {
     padding: 70px;
 }
 
-img.html-logo{
-    width: 500px;
-}
-
-img.react-logo {
-    width: 450px;
-}
-
-img {
-    width: 500px;
-    size: cover;
+section.introducao div img, section.about div img, section.skills div img{
+    max-width: 400px;
 }
 
 .introducao{
