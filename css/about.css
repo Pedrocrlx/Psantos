@@ -3,19 +3,20 @@ body {
     margin: 0;
 }
 
-section.about, section.introducao {
+section.about,
+section.introducao {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-section.about div{
+section.about div {
     text-align: center;
     font-size: 20px;
-    padding-left: 55px;
 }
 
-section.about div h2, section.about div p {
+section.about div h2,
+section.about div p {
     padding: 20px;
 }
 
@@ -25,7 +26,8 @@ section.introducao {
     padding: 25px;
 }
 
-section.introducao div h2, section.introducao div p {
+section.introducao div h2,
+section.introducao div p {
     padding: 25px;
 }
 
@@ -54,14 +56,55 @@ img.logo-img {
     object-fit: contain;
 }
 
-section.introducao div img, section.about div img, section.skills div img{
+section.introducao div img,
+section.about div img,
+section.skills div img {
     max-width: 400px;
 }
 
-.introducao{
+.introducao {
     justify-items: center;
 }
 
 .about {
     justify-items: center;
+}
+
+@media (max-width: 768px) {
+
+    section.about,
+    section.introducao {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    section.skills div.skills-img {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    img.logo-img {
+        width: 120px;
+        max-height: 120px;
+        object-fit: contain;
+        grid-column: span 2;
+    }
+
+    img.react {
+        grid-column: 2 / 4;
+    }
+
+    section.introducao div img,
+    section.about div img,
+    section.skills div img {
+        max-width: 300px;
+    }
+
+
 }

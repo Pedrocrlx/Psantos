@@ -7,3 +7,6 @@ input:focus {
     border: 5px solid rgb(10, 84, 126);
 }
 
+textarea#assunto {
+    resize: none;
+}

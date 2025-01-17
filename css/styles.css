@@ -65,6 +65,7 @@ div.port-image img {
 
 .port-image {
     text-align: center;
+    justify-items: center;
 }
 
 td select#regiao {
@@ -159,4 +160,29 @@ button.link-topics:hover {
     justify-items: center;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+    section.port-image div,
+    section.port-image div p {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        gap: 5px;
+        flex-direction: column-reverse;
+    }
+
+    div.port-image img {
+        width: 350px;
+    }
+
+    div.container div.topics {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 25px 0px;
+    }
+
+
+}
