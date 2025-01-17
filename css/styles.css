@@ -88,10 +88,6 @@ table tbody tr td button {
     font-size: 15px;
 }
 
-input:focus {
-    border: 5px solid rgb(10, 84, 126);
-}
-
 div.container div.topics {
     display: flex;
     justify-content: space-between;
@@ -140,7 +136,7 @@ section.port-image div p {
     padding-top: 25px;
 }
 
-footer {
+footer div#footer {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -160,4 +156,8 @@ button.link-topics:hover {
 
 .about {
     justify-items: center;
+}
+
+@media (max-width: 768px) {
+
 }

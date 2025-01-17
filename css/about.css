@@ -41,14 +41,17 @@ section.skills div h2 {
 }
 
 section.skills div.skills-img {
-    display: flex;
-    justify-content: center;
+    max-width: 500px;
+    display: inline-grid;
+    justify-content: space-between;
     align-items: center;
+    grid-template-columns: repeat(5, 50px);
+    gap: 250px;
 }
 
 img.logo-img {
-    width: 205px;
-    padding: 70px;
+    width: 150px;
+    object-fit: contain;
 }
 
 section.introducao div img, section.about div img, section.skills div img{
