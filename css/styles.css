@@ -90,9 +90,10 @@ table tbody tr td button {
 
 div.container div.topics {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 150px;
     padding: 25px 0px;
 }
 
@@ -158,6 +159,4 @@ button.link-topics:hover {
     justify-items: center;
 }
 
-@media (max-width: 768px) {
-
-}
+@media (max-width: 768px) {}
