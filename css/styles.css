@@ -69,27 +69,6 @@ div.port-image img {
     justify-items: center;
 }
 
-td select#regiao {
-    margin: 15px 15px;
-}
-
-td input {
-    margin: 15px 15px;
-}
-
-table tbody td h3 {
-    color: rgb(10, 84, 126);
-}
-
-table tbody tr td button {
-    background-color: rgb(10, 84, 126);
-    color: white;
-    padding: 20px;
-    border: 1px solid;
-    border-radius: 40px;
-    font-size: 15px;
-}
-
 div.container div.topics {
     display: flex;
     justify-content: center;
@@ -136,7 +115,7 @@ section.port-image div p {
     justify-content: center;
     justify-items: center;
     gap: 45px;
-    padding-top: 25px;
+    padding: 25px;
 }
 
 footer div#footer {
@@ -161,6 +140,8 @@ button.link-topics:hover {
     justify-items: center;
 }
 
+/* CSS MEDIA QUERY */
+
 @media (max-width: 768px) {
 
     section.port-image div,
@@ -184,6 +165,4 @@ button.link-topics:hover {
         gap: 10px;
         padding: 25px 0px;
     }
-
-
 }

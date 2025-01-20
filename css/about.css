@@ -38,7 +38,7 @@ section.skills {
 
 section.skills div h2 {
     text-align: center;
-    padding-top: 100px;
+    padding: 50px;
     font-size: 35px;
 }
 
@@ -83,6 +83,7 @@ section#experiencia div.card {
     justify-self: center;
     padding: 25px;
     margin-top: 50px;
+    width: 300px;
 }
 
 section#experiencia h2 {
@@ -100,6 +101,8 @@ section#experiencia div.card a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* CSS MEDIA QUERY */
 
 @media (max-width: 1414px) {
     section.skills div.skills-img {
