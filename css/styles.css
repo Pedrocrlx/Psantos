@@ -42,6 +42,7 @@ header .home-button:hover {
 main h1,
 h2 {
     color: rgb(10, 84, 126);
+    font-size: 32px;
 }
 
 header .home-button {

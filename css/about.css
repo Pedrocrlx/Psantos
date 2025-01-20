@@ -47,8 +47,8 @@ section.skills div.skills-img {
     display: inline-grid;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: repeat(5, 50px);
-    gap: 250px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 150px;
 }
 
 img.logo-img {
@@ -70,10 +70,66 @@ section.skills div img {
     justify-items: center;
 }
 
+section {
+    margin: 60px 0px;
+}
+
+section#experiencia div.card {
+    background-color: rgb(10, 84, 126);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+section#experiencia h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+section#experiencia div.card a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1414px) {
+    section.skills div.skills-img {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        gap: 105px;
+        justify-items: center;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1168px) {
+    section.skills div.skills-img {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(5, 149px);
+    }
+}
+
 @media (max-width: 768px) {
 
-    section.about,
     section.introducao {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.about {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -87,13 +143,15 @@ section.skills div img {
         gap: 5px;
         justify-items: center;
         grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
     }
 
     img.logo-img {
-        width: 120px;
-        max-height: 120px;
+        width: 90px;
+        max-height: 90px;
         object-fit: contain;
         grid-column: span 2;
+        padding: 10px;
     }
 
     img.react {
@@ -106,5 +164,13 @@ section.skills div img {
         max-width: 300px;
     }
 
+    section {
+        margin: 20px 0px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
