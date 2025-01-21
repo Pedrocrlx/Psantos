@@ -51,9 +51,37 @@ section.skills div.skills-img {
     gap: 150px;
 }
 
+div.kapta img {
+    width: 100px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+div.kapta img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 img.logo-img {
     width: 150px;
     object-fit: contain;
+}
+
+img.skill-logo {
+    cursor: pointer;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+img.skill-logo:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 section.introducao div img,
