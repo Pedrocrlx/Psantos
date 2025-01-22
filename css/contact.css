@@ -9,25 +9,30 @@ h3 {
     padding: 10px;
 }
 
+div.container div h2 {
+    color: rgb(10, 84, 126);
+    text-align: center;
+    padding: 30px;
+}
+
 section div h2 {
     color: rgb(10, 84, 126);
 }
 
 section#Contacto {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 30px;
     text-align: center;
     justify-items: center;
-}
-
-input {
-    border-radius: 20px;
+    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 textarea#assunto {
     resize: none;
+    border-radius: 10px;
+    width: 250px;
 }
 
 form {
@@ -43,11 +48,19 @@ tr {
 }
 
 td select#regiao {
-    margin: 15px 15px;
+    margin: 15px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 40px;
 }
 
 td input {
     margin: 15px 15px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
 }
 
 table tbody td h3 {
@@ -56,18 +69,19 @@ table tbody td h3 {
 
 table tbody tr td button {
     padding: 20px;
-    margin: 25px 0px 10px 0px;
+    margin-top: 30px;
     color: rgb(10, 84, 126);
     border-radius: 40px;
     font-size: 15px;
     background-color: white;
+    border: none;
 }
 
 div.contacts-icon {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
     gap: 45px;
+    margin: 40px;
 }
 
 img.social-contact {

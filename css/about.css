@@ -43,8 +43,7 @@ section.skills div h2 {
 }
 
 section.skills div.skills-img {
-    max-width: 500px;
-    display: inline-grid;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(5, 1fr);
@@ -135,20 +134,47 @@ section#experiencia div.card a {
 @media (max-width: 1414px) {
     section.skills div.skills-img {
         display: grid;
-        justify-content: space-between;
+        grid-template-columns: repeat(5, 100px);
+        justify-content: center;
         align-items: center;
-        gap: 105px;
-        justify-items: center;
-        grid-template-columns: repeat(5, 1fr);
     }
 }
 
-@media (max-width: 1168px) {
+@media (max-width: 1200px) {
     section.skills div.skills-img {
         display: grid;
+        grid-template-columns: repeat(5, 80px);
+        justify-content: center;
         align-items: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 1144px) {
+    section.skills div.skills-img {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
         justify-items: center;
-        grid-template-columns: repeat(5, 149px);
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+    }
+
+    img.logo-img {
+        width: 150px;
+        object-fit: contain;
+        grid-column: span 2;
+        padding: 10px;
+    }
+
+    img.react {
+        grid-column: 2 / 4;
     }
 }
 
