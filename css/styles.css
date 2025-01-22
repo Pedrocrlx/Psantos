@@ -36,6 +36,7 @@ header nav a:hover {
 }
 
 header .home-button:hover {
+    border-color: lightblue;
     color: lightblue;
 }
 
