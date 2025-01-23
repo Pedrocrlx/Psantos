@@ -75,6 +75,7 @@ table tbody tr td button {
     font-size: 15px;
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 div.contacts-icon {
@@ -98,6 +99,11 @@ img.social-contact:hover {
     transform: scale(1.3);
 }
 
+.erro {
+    border: 2px solid red;
+    color: red;
+}
+
 @media (max-width: 768px) {
 
     section#Contacto {
@@ -107,6 +113,10 @@ img.social-contact:hover {
         text-align: center;
         justify-items: center;
         flex-direction: column-reverse;
+    }
+
+    form {
+        width: 320px;
     }
 
 }

@@ -36,7 +36,7 @@
                             onclick="socialLinkedin()">
                     </div>
                 </div>
-                <form action="" method="post">
+                <form action="" id="formValidation" method="post">
                     <table>
                         <tbody>
                             <tr>
@@ -46,8 +46,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="regiao"></label>
-                                    <select id="regiao">
+                                    <label for="city"></label>
+                                    <select id="city">
                                         <option value="Faro">Faro</option>
                                         <option value="Lisboa">Lisboa</option>
                                         <option value="Porto">Porto</option>
@@ -65,18 +65,7 @@
                             <tr>
                                 <td>
                                     <label for="email"></label>
-                                    <input type="email" id="email" name="email" placeholder="empresa@.gmail.com" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>Número de telemóvel</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="number"></label>
-                                    <input type="number" id="number" name="number" placeholder="000-000-000" required>
+                                    <input type="email" id="email" name="email" placeholder="empresa@.gmail.com">
                                 </td>
                             </tr>
                             <tr>
@@ -87,12 +76,23 @@
                             <tr>
                                 <td>
                                     <label for="company"></label>
-                                    <input type="text" name="company" id="company" placeholder="Empresa" required>
+                                    <input type="text" name="company" id="company" placeholder="Empresa">
                                 </td>
                             <tr>
+                            <tr>
                                 <td>
-                                    <h3>Fale sobre o seu projeto ! </h3>
+                                    <h3>Número de telemóvel</h3>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="number"></label>
+                                    <input type="number" id="number" name="number" placeholder="000-000-000">
+                                </td>
+                            </tr>
+                            <td>
+                                <h3>Fale sobre o seu projeto ! </h3>
+                            </td>
                             </tr>
                             <tr>
                                 <td>
@@ -102,6 +102,7 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <p id="erro" style="color: orange;"></p>
                                     <button type="submit">Contactar</button>
                                 </td>
                             </tr>
