@@ -1,0 +1,55 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button.link-topics {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(10, 84, 126);
+    padding: 25px;
+    border-radius: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+.frontEndAulas,
+.frontEndProjeto {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    margin-top: 340px;
+    margin-bottom: 400px;
+}
+
+/* CSS MEDIA QUERY */
+
+@media (max-width: 768px) {
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    button.link-topics {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .frontEndAulas,
+    .frontEndProjeto {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
